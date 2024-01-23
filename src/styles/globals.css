@@ -1,0 +1,61 @@
+import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap')
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family:
+		'Jost',
+		sans-serif,
+		-apple-system,
+		BlinkMacSystemFont,
+		Segoe UI,
+		Roboto,
+		Oxygen,
+		Ubuntu,
+		Cantarell,
+		Fira Sans,
+		Droid Sans,
+		Helvetica Neue,
+		sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+@keyframes blink {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes movi {
+	0% {
+		transform: translateX(0%);
+	}
+	48% {
+		opacity: 1;
+	}
+	50% {
+		transform: translateX(-5%);
+	}
+}
+
+.logo path:nth-child(10) {
+	animation:
+		blink 0.3s ease-in-out 2,
+		movi 3s ease-in-out 1.5s infinite;
+	animation-delay: 1s;
+}
+.logo path:nth-child(12) {
+	animation:
+		blink 0.3s ease-in-out 2,
+		movi 3s ease-in-out 1.5s infinite;
+	animation-delay: 1s;
+}
