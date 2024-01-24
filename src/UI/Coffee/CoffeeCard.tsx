@@ -1,10 +1,12 @@
-import { Image, Skeleton, Stack, Text } from '@chakra-ui/react';
+import { Image, Skeleton, Stack, Text, useDisclosure } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import { Coffee } from '~/server/api/routers/coffee';
+import CoffeeDrawer from './CoffeeDrawer';
 type CoffeeCardProps = {
 	coffee: Coffee;
 };
 const CoffeeCard = ({ coffee }: CoffeeCardProps) => {
+    const {isOpen, onClose, onToggle} = useDisclosure()
 	return (
 		<Stack
             as={motion.div}
@@ -25,6 +27,7 @@ const CoffeeCard = ({ coffee }: CoffeeCardProps) => {
 			alignItems="center"
 			justifyContent="space-between"
 			fontSize={14}
+            onClick={onToggle}
 		>
 			<Image
 				src={coffee.img}
@@ -35,6 +38,7 @@ const CoffeeCard = ({ coffee }: CoffeeCardProps) => {
 			/>
 			<Text>{coffee.name}</Text>
 			<Text>{coffee.price} ₽</Text>
+            <CoffeeDrawer coffee={coffee} isOpen={isOpen} onClose={onClose}/>
 		</Stack>
 	);
 };
