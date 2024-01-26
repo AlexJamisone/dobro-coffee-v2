@@ -28,6 +28,7 @@ const CoffeeCard = ({ coffee }: CoffeeCardProps) => {
 			justifyContent="space-between"
 			fontSize={14}
             onClick={onToggle}
+            minW={350}
 		>
 			<Image
 				src={coffee.img}
