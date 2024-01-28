@@ -26,9 +26,9 @@ const CoffeeCard = ({ coffee }: CoffeeCardProps) => {
 			boxShadow={'lg'}
 			alignItems="center"
 			justifyContent="space-between"
-			fontSize={14}
+			fontSize={[12, 12, 14]}
             onClick={onToggle}
-            minW={350}
+            minW={300}
 		>
 			<Image
 				src={coffee.img}
