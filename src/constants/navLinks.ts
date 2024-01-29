@@ -40,7 +40,7 @@ export const navLinks: NavLink[] = [
 		id: 4,
 		outside: false,
 		title: 'Бонусы',
-		href: '/crm',
+		href: '/bonus',
 		icon: FaTelegramPlane,
 		color: 'telegram.500',
 	},

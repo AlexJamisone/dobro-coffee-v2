@@ -24,9 +24,9 @@ const Coffee = () => {
 			>
 				{isLoading ? (
 					<>
-						<Skeleton w={300} h={92} rounded={'2xl'} />
-						<Skeleton w={300} h={92} rounded={'2xl'} />
-						<Skeleton w={300} h={92} rounded={'2xl'} />
+						<Skeleton w={320} h={92} rounded={'2xl'} />
+						<Skeleton w={320} h={92} rounded={'2xl'} />
+						<Skeleton w={320} h={92} rounded={'2xl'} />
 					</>
 				) : (
 					enteris?.map((coffee) => (
