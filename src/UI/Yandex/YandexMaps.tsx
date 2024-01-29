@@ -1,5 +1,3 @@
-import { Box } from '@chakra-ui/react';
-import { motion } from 'framer-motion';
 import React from 'react';
 import MapsWidget from '~/components/MapsWidget';
 import { useCity } from '~/store/useCity';
