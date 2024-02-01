@@ -1,8 +1,14 @@
 import { Link } from '@chakra-ui/next-js';
 import { Box, Button, Heading, Stack } from '@chakra-ui/react';
+import Head from 'next/head';
 const BonusPage = () => {
 	return (
 		<Stack justifyContent="center" alignItems="center" mx={5}>
+        <Head>
+            <title>
+                Добро кофе: Бонусы
+            </title>
+        </Head>
 			<Heading
 				textAlign="center"
 				textColor="blackAlpha.700"

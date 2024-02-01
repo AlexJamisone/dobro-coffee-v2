@@ -4,7 +4,6 @@ import {
 	DrawerCloseButton,
 	DrawerContent,
 	DrawerHeader,
-	DrawerOverlay,
 	Image,
 	Stack,
 	Text,
@@ -24,10 +23,11 @@ const CoffeeDrawer = ({ isOpen, onClose, coffee }: CoffeeDrawerProps) => {
 			placement="bottom"
 			size={'full'}
 		>
-			<DrawerOverlay />
 			<DrawerContent textAlign={'center'}>
 				<DrawerCloseButton />
-				<DrawerHeader>{coffee.name}</DrawerHeader>
+				<DrawerHeader>
+                    {coffee.name}
+				</DrawerHeader>
 				<DrawerBody as={Stack} gap={3}>
 					<Image
 						mx="auto"
@@ -36,7 +36,9 @@ const CoffeeDrawer = ({ isOpen, onClose, coffee }: CoffeeDrawerProps) => {
 						w={250}
 						h={250}
 					/>
-					<Text fontWeight={600} fontSize={'2xl'}>{coffee.price} ₽</Text>
+					<Text fontWeight={600} fontSize={'2xl'}>
+						{coffee.price} ₽
+					</Text>
 					<Stack>
 						{coffee.info.map((item) => (
 							<Text key={item.id}>
