@@ -23,9 +23,10 @@ const CoffeeDrawer = ({ isOpen, onClose, coffee }: CoffeeDrawerProps) => {
 			onClose={onClose}
 			placement="bottom"
 			size={'full'}
+            blockScrollOnMount={false}
 		>
             <DrawerOverlay/>
-			<DrawerContent textAlign={'center'} height='100vsh'>
+			<DrawerContent textAlign={'center'} height='100svh'>
 				<DrawerCloseButton />
 				<DrawerHeader>
                     {coffee.name}
