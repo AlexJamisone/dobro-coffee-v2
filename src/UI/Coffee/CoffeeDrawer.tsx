@@ -4,6 +4,7 @@ import {
 	DrawerCloseButton,
 	DrawerContent,
 	DrawerHeader,
+	DrawerOverlay,
 	Image,
 	Stack,
 	Text,
@@ -23,7 +24,8 @@ const CoffeeDrawer = ({ isOpen, onClose, coffee }: CoffeeDrawerProps) => {
 			placement="bottom"
 			size={'full'}
 		>
-			<DrawerContent textAlign={'center'} maxH='100vsh'>
+            <DrawerOverlay/>
+			<DrawerContent textAlign={'center'} height='100vsh'>
 				<DrawerCloseButton />
 				<DrawerHeader>
                     {coffee.name}
