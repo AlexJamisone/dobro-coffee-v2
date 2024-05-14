@@ -9,13 +9,13 @@ export const barista: Barista[] = [
 	{
 		id: 1,
 		name: 'Саша',
-		link: 'https://www.tinkoff.ru/cf/142W441ULA3',
+		link: 'https://www.tinkoff.ru/rm/bakhmanov.aleksandr2/4PXEg7008',
 		avatar: '/static/sasha.png',
 	},
 	{
 		id: 2,
 		name: 'Оля',
-		link: 'https://www.tinkoff.ru/cf/2UBOx4Pfur8',
+		link: 'https://www.tinkoff.ru/cf/4cbbaoHREON',
 		avatar: '/static/oli.jpg',
 	},
 	{
